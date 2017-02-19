@@ -1,10 +1,10 @@
 <div class="clear">
     <md-toolbar>
-        Detalle proveedor
+        Detalle proveedor {{title}}
     </md-toolbar>
       <label>
         Label
-        <input #dialogInput>
+        <input #dialogInput [(ngModel)] = "title">
       </label>
     
     <p> <button md-button (click)="dialogRef.close(dialogInput.value)">CLOSE</button> </p>

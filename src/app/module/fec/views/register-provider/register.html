@@ -1,6 +1,12 @@
-    <md-card>
-      <button md-raised-button (click)="openDialog()">+</button>
-    </md-card>
 
+<md-card>
+   <button md-raised-button (click)="openDialog()">+</button>
+</md-card>
 
-    <simple-table></simple-table>
+<simple-table [cronograma]="cronograma"></simple-table>
+
+<md-card>
+
+<input [(ngModel)] = "title">
+
+</md-card>
