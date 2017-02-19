@@ -1,14 +1,14 @@
-import { OurPlanetsPage } from './app.po';
+import { AppPage } from './app.po';
 
-describe('our-planets App', function() {
-  let page: OurPlanetsPage;
+describe('our-app App', function() {
+  let page: AppPage;
 
   beforeEach(() => {
-    page = new OurPlanetsPage();
+    page = new AppPage();
   });
 
   it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Planets works!');
+    expect(page.getParagraphText()).toEqual('App works!');
   });
 });

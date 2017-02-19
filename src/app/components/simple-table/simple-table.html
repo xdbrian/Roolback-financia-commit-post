@@ -1,0 +1,16 @@
+<table class="table table-hover">
+  <thead>
+  <tr>
+    <th *ngFor="let item of titles">{{item.title}}</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let itemCronograma of cronograma">
+    <td>{{itemCronograma.id}}</td>
+    <td>{{itemCronograma.fechaVencimiento}}</td>    
+    <td>{{itemCronograma.capital}}</td>
+    <td>{{itemCronograma.taza}}$</td>    
+    <td>{{itemCronograma.cuota}}</td>
+  </tr>
+  </tbody>
+</table>

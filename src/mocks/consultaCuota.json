@@ -1,0 +1,25 @@
+{
+  "cronograma": [
+      {
+        "id": 1,
+        "taza": 5,
+        "capital": 500,
+        "cuota": 100,
+        "fechaVencimiento": "07/03/2017"        
+      },
+      {
+        "id": 2,
+        "taza": 5,
+        "capital": 500,
+        "cuota": 100,
+        "fechaVencimiento": "09/03/2017"        
+      },
+      {
+        "id": 3,
+        "taza": 5,
+        "capital": 500,
+        "cuota": 100,
+        "fechaVencimiento": "11/03/2017"        
+      }         
+  ]
+}

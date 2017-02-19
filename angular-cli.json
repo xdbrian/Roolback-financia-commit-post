@@ -1,7 +1,7 @@
 {
   "project": {
     "version": "1.0.0-beta.28.3",
-    "name": "our-planets"
+    "name": "app-Tfinancia"
   },
   "apps": [
     {
@@ -16,7 +16,7 @@
       "polyfills": "polyfills.ts",
       "test": "test.ts",
       "tsconfig": "tsconfig.json",
-      "prefix": "Planets",
+      "prefix": "Tfinancia",
       "styles": [
         "styles.css"
       ],
