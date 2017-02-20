@@ -23,12 +23,7 @@ export class OutlayComponent {
   lastDialogResult: string;
 
   constructor(private http:Http,private _dialog: MdDialog, private _snackbar: MdSnackBar) {
-
-     this.http.get('./mocks/consultaCuota.json')
-      .map(response => response.json().screenshots)
-      .subscribe(res => this.spaceScreens = res);
-
-        setInterval(() => {
+       setInterval(() => {
       this.progress = (this.progress + Math.floor(Math.random() * 4) + 1) % 100;
     }, 200);
   }

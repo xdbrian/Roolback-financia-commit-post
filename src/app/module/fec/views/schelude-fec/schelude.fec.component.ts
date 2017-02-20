@@ -1,7 +1,8 @@
-import { Component,Injectable,Optional } from '@angular/core';
+import { Component,NgZone  } from '@angular/core';
 import { Http } from '@angular/http';
-import { MdDialog, MdDialogRef, MdSnackBar } from '@angular/material';
-
+import { MdDialog, MdDialogRef } from '@angular/material';
+import { Colum } from './../../services/fec.service';
+//import { MatchMediaService } from '../../../../shared/MatchMediaService';
 @Component({
   selector: 'schelude-fec',
   templateUrl: './schelude-fec.html',
@@ -9,17 +10,30 @@ import { MdDialog, MdDialogRef, MdSnackBar } from '@angular/material';
 })
 export class ScheludeFecComponent{
 
- taza :number =50;
+  taza :number =50;
 
   title :String= "FEC - Registro de operaciones";
 
-  spaceScreens: Array<any>;
+  cronograma: Colum[];
+  titles : Colum[];
 
-  constructor(private http:Http) {
+  mobile :boolean =false;
 
-     this.http.get('./mocks/consultaCuota.json')
-      .map(response => response.json().screenshots)
-      .subscribe(res => this.spaceScreens = res);
+  constructor(private http:Http,ngZone:NgZone) {
+    this.mobile = window.innerWidth < 700 ? true  : false;            
+        window.onresize = (e) =>{
+        ngZone.run(() => {
+            this.mobile = window.innerWidth < 700 ? true  : false;            
+        });
+        console.log(window.innerWidth);
+    };
+    this.http.get('./mocks/getCuotas.json')
+        .map(response => response.json().cronograma)
+        .subscribe(res => this.cronograma  = res);
+
+         this.http.get('./mocks/getCuotas.json')
+        .map(response => response.json().titles)
+        .subscribe(res => this.titles  = res);  
   }
 
 }

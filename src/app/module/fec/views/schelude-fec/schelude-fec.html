@@ -1,34 +1,45 @@
-into schelude-fec
-<!--
 <div>
 <div class="padding-left-right text-gray ">
   <div class="row">
     <div class="col-md-6 col-sm-6 col-xs-12 hijo-center">
-          <label>Número de cuotas</label>
-          <md-input  placeholder=""></md-input>
+          <label *ngIf = "!mobile">Número de cuotas</label>
+          <md-input-container [ngClass]=" mobile == true ? 'width-all' : ''">
+            <input mdInput placeholder="{{mobile ==true? 'Perioricidad' : '' }}">
+          </md-input-container>
+      
     </div>
     <div class="col-md-6 col-sm-6 col-xs-12 hijo-center">
-          <label>Taza</label>
-          <md-input disabled  placeholder="{{taza}}$"></md-input>
+          <label *ngIf = "!mobile">Taza</label>
+          <md-input-container [ngClass]=" mobile == true ? 'width-all' : ''">
+            <input mdInput placeholder="{{mobile ==true? 'Taza' : '' }}">
+          </md-input-container>
+      
     </div>
   </div>
 
   <div class="row">
     <div class="col-md-6 col-sm-6 col-xs-12 hijo-center">
-          <label>Perioricidad</label>
-          <md-input  placeholder=""></md-input>
+          <label *ngIf = "!mobile">Perioricidad</label>
+          <md-input-container [ngClass]=" mobile == true ? 'width-all' : ''">
+            <input mdInput placeholder=" {{mobile ==true? 'Perioricidad' : '' }}">
+          </md-input-container>
+      
     </div>
     <div class="col-md-6 col-sm-6 col-xs-12 hijo-center">
-        <md-input type="date" placeholder="Enter date"></md-input>
-          <label>Primer vencimiento</label>
-          <md-input  placeholder=""></md-input>
+        
+          <label *ngIf = "!mobile">Primer vencimiento</label>
+          <md-input-container [ngClass]=" mobile == true ? 'width-all' : ''">
+            <input mdInput placeholder="{{mobile ==true? 'Primer vencimiento' : '' }}">
+          </md-input-container>
+      
     </div>
   </div>
 </div>
   <div class="line-separator"></div>
 
   <div class="container-fluid padding-left-right">
-    <schelude-table></schelude-table>
+    <simple-table [colums]="cronograma" [titles]="titles"></simple-table>
+
   </div>
 
   <div class="">
@@ -41,4 +52,3 @@ into schelude-fec
 
 </div>
 
--->

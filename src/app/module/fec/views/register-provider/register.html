@@ -1,12 +1,58 @@
+<md-card class="row">
 
-<md-card>
-   <button md-raised-button (click)="openDialog()">+</button>
+    <md-card-content class="col-md-12 col-sm-12 col-xs-12">
+
+        <div class="col-md-6 col-sm-6 col-xs-6">
+            <label >Tipo de moneda</label>
+            <label *ngIf = "!checked">Soles</label>
+            <md-slide-toggle [checked]="checked" [(ngModel)]="checked"></md-slide-toggle>
+            <label *ngIf = "checked">Dólares</label>
+        </div>
+        
+        <div class="col-md-6 col-sm-6 col-xs-6">    
+            <md-checkbox  [(ngModel)]="checked">Checked</md-checkbox>
+        </div>
+
+
+        
+    </md-card-content>
+
+    <div class="col-md-1 col-sm-2 col-xs-12">
+        <button md-raised-button (click)="openDialog()">+</button>
+    </div>
+    <md-input-container class="col-md-4 col-sm-4 col-xs-12">
+      <input mdInput  [(ngModel)] = "test" >
+    </md-input-container>
 </md-card>
 
-<simple-table [cronograma]="cronograma"></simple-table>
+<simple-table [colums]="providerss" [titles]="titles"></simple-table>
 
 <md-card>
+  <md-card-content>
+    <h2 class="example-h2">Slider configuration</h2>
 
-<input [(ngModel)] = "title">
+    <section class="example-section">
+      <label class="example-margin">Color:</label>
+      <md-radio-group [(ngModel)]="color">
+        <md-radio-button class="example-margin" value="primary">
+          Primary
+        </md-radio-button>
+        <md-radio-button class="example-margin" value="accent">
+          Accent
+        </md-radio-button>
+        <md-radio-button class="example-margin" value="warn">
+          Warn
+        </md-radio-button>
+      </md-radio-group>
+    </section>
 
+
+
+    <section class="example-section">
+      <md-checkbox class="example-margin" [(ngModel)]="disabled">Disabled</md-checkbox>
+    </section>
+  </md-card-content>
+</md-card>
+
+<md-card>
 </md-card>

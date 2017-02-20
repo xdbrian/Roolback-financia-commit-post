@@ -8,19 +8,11 @@ import { Colum } from '../../module/fec/services/fec.service';
 })
 export class SimpleTable{ 
 
-  titles = [
-    {title: 'Cuota'},
-    {title: 'Fecha vencimiento'},
-    {title: 'Capital'},
-    {title: 'Interes'},
-    {title: 'Pago cuota'}   
-  ];
+  @Input()
+  titles  : String[];
 
   @Input()
-  title  : Colum[];
-
-  @Input()
-  cronograma  : Colum[];
+  colums  : Colum[];
   
   constructor(private http:Http) {
   }

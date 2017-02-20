@@ -1,25 +1,32 @@
 {
-  "cronograma": [
+  "providerss": [
       {
-        "id": 1,
+        "id": 13434234,
         "taza": 5,
         "capital": 500,
         "cuota": 100,
         "fechaVencimiento": "07/03/2017"        
       },
       {
-        "id": 2,
+        "id": 24124324,
         "taza": 5,
         "capital": 500,
         "cuota": 100,
         "fechaVencimiento": "09/03/2017"        
       },
       {
-        "id": 3,
+        "id": 3456456,
         "taza": 5,
         "capital": 500,
         "cuota": 100,
         "fechaVencimiento": "11/03/2017"        
       }         
+  ],
+    "titles" : [
+      { "title" :"IDLC"},
+      { "title" :"Proveedor"},
+      { "title" :"Capital"},
+      { "title" :"Interes"},
+      { "title" :"Pago cuota" } 
   ]
 }
