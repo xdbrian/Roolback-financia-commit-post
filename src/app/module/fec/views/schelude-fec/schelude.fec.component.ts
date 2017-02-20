@@ -25,7 +25,6 @@ export class ScheludeFecComponent{
         ngZone.run(() => {
             this.mobile = window.innerWidth < 700 ? true  : false;            
         });
-        console.log(window.innerWidth);
     };
     this.http.get('./mocks/getCuotas.json')
         .map(response => response.json().cronograma)

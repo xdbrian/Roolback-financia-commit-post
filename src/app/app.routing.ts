@@ -5,7 +5,9 @@ import  { FecComponent } from './module/fec/fec.component'
 const appRoutes: Routes = [
  //{path: 'financiar', component: FecComponent},
  //{ path: '',   redirectTo: '/financiar', pathMatch: 'full' },
- { path: 'desembolso', component:  OutlayComponent}
+ { path: 'desembolso', component:  OutlayComponent},
+ { path: 'home', component:  OutlayComponent}
+
 ];
 
 @NgModule({

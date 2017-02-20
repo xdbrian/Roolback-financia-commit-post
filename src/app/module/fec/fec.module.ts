@@ -10,7 +10,7 @@ import { FecComponent } from './fec.component';
 import { SimpleTable } from '../../components/simple-table/simpleTable.component';
 import { ScheludeFecComponent} from './views/schelude-fec/schelude.fec.component';
 
-import { FecRoutingModule } from './fec.routing.module';
+import { FecRoutingModule } from './fec.routing';
 @NgModule({
   imports: [
     CommonModule,

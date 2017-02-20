@@ -9,11 +9,6 @@ import { Hero} from './shared/Hero';
 })
 export class AppComponent implements OnInit {
 
-  hero: Hero = {
-    id: 1,
-    name: 'Windstorm'
-  };
-  
   subtitle: String = 'Registro de proveedor';
   
   planetsList: App[] = [];

@@ -5,11 +5,17 @@ import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 import { RouterModule }   from '@angular/router';
 
-import { AppRoutingModule } from './app.routing.module';
+import { AppRoutingModule } from './app.routing';
 import { AppService } from './shared/app.service';
 import { AppComponent } from './app.component';
-import { FecModule } from './module/fec/fec.module';
 import { OutlayComponent,DialogContent }   from './module/outlay/outlay.component';
+
+//Components
+
+
+//Modules
+import { FecModule } from './module/fec/fec.module';
+
 @NgModule({
   imports: [
     BrowserModule,
