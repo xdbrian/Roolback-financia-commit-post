@@ -9,7 +9,7 @@ import { Colum } from './../../services/fec.service';
 })
 export class RegisterComponent implements OnInit{ 
   
-  checked = false;
+  checked = true;
 
   ngOnInit(){
     this.http.get('./mocks/getProviderss.json')
