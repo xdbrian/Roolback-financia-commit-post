@@ -41,6 +41,7 @@
 
 .text-gray{
     color: #999999;
+    
 }
 
 @media screen and (max-width:777px){  
@@ -51,3 +52,7 @@
     }
 
 } 
+
+.width-all{
+    width: 80%;
+}

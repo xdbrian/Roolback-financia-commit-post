@@ -4,8 +4,11 @@ import { RegisterComponent }    from './views/register-provider/register.compone
 import { ScheludeFecComponent } from './views/schelude-fec/schelude.fec.component';
 import { FecComponent } from './fec.component';
 const fecRoutes: Routes = [
+  
+      { 
+    path: 'home/fec',redirectTo: '/fec',pathMatch: 'full'
+  },
   {
-    
     path: "fec",
     component : FecComponent,
     children : [

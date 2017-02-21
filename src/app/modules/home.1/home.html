@@ -1,0 +1,37 @@
+<md-card>
+  <button md-raised-button routerLink="registrar">Registrar</button>
+<button md-raised-button routerLink="cronograma">Contnuar</button>
+</md-card>
+
+<md-grid-list cols="4" rowHeight="100px">
+  <md-grid-tile
+      *ngFor="let tile of tiles"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+      [style.background]="tile.color"
+      style="margin-left: 4px;">
+
+
+
+    {{tile.text}}
+  </md-grid-tile>
+</md-grid-list>
+
+
+
+
+<md-card>
+    <md-card-subtitle>Subtitle</md-card-subtitle>
+    <md-card-title>Card with title and footer</md-card-title>
+    <md-card-content>
+      <p>This is supporting text.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </md-card-content>
+    <md-card-actions>
+      <button md-button>LIKE</button>
+      <button md-button>SHARE</button>
+    </md-card-actions>
+    <md-card-footer>
+      <md-progress-bar mode="indeterminate"></md-progress-bar>
+    </md-card-footer>
+  </md-card>

@@ -7,28 +7,29 @@ import { RouterModule }   from '@angular/router';
 
 import { AppRoutingModule } from './app.routing';
 import { AppComponent } from './app.component';
-import { OutlayComponent,DialogContent }   from './module/outlay/outlay.component';
+import { HomeModule } from './modules/home/home.module';
+import { OutlayComponent } from './modules/outlay/outlay.component';
 
 //Components
 
 
 //Modules
-import { FecModule } from './module/fec/fec.module';
+import { FecModule } from './modules/home/fec/fec.module';
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
     MaterialModule.forRoot(),
-    FecModule,
+    HomeModule,
     AppRoutingModule
   ],
   declarations: [
     AppComponent,
-    OutlayComponent,
-    DialogContent
+    OutlayComponent
+    //DialogContent
   ],
-  entryComponents: [DialogContent],
+  //entryComponents: [DialogContent],
   bootstrap: [ AppComponent ]
 })
 export class AppModule {
