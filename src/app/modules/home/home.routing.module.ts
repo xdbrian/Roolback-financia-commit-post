@@ -10,6 +10,7 @@ const homeRoutes: Routes = [
     component : HomeComponent,
   },
   { path: 'home/fec',redirectTo: '/fec',pathMatch: 'full'},
+  { path: 'home/registrar',redirectTo: 'fec/registrar',pathMatch: 'full'},
   {
     path: "fec",
     component : FecComponent,
