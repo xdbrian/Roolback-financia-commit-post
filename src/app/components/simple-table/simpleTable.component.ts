@@ -1,6 +1,6 @@
 import { Component,Input  } from '@angular/core';
 import {Http} from '@angular/http';
-import { Colum } from '../src/app/services/fec.service';
+import {Colum} from 'app/services/fec.service';
 
 @Component({
   selector: 'simple-table',

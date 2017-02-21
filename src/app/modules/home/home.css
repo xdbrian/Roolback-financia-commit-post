@@ -1,3 +1,9 @@
+/* home */
+#main-home{
+	height: 100%;
+    width: 100%;
+    margin-left: 150px;
+}
 .card-margin-top{
     margin-top: 8px;
 }
