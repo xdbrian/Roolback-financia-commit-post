@@ -1,7 +1,8 @@
 import { Component,NgZone  } from '@angular/core';
 import { Http } from '@angular/http';
 import { MdDialog, MdDialogRef } from '@angular/material';
-import { Colum } from './../../services/fec.service';
+
+import { Colum } from '../../services/fec.service';
 //import { MatchMediaService } from '../../../../shared/MatchMediaService';
 @Component({
   selector: 'schelude-fec',

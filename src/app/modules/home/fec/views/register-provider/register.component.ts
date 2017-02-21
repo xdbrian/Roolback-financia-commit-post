@@ -1,7 +1,7 @@
 import { Component,Injectable,Optional,Input,OnInit } from '@angular/core';
 import { Http } from '@angular/http';
 import {MdDialog, MdDialogConfig,MdDialogRef, MdSnackBar} from '@angular/material';
-import { Colum } from '../../../../../services/fec.service';
+import { Colum } from '../../services/fec.service';
 @Component({
   selector: 'register-provider',
   templateUrl: './register.html',
