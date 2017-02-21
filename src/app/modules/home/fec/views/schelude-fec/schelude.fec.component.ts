@@ -1,7 +1,7 @@
 import { Component,NgZone  } from '@angular/core';
 import { Http } from '@angular/http';
 import { MdDialog, MdDialogRef } from '@angular/material';
-import { Colum } from '../../services/fec.service';
+import { Colum } from './../../services/fec.service';
 //import { MatchMediaService } from '../../../../shared/MatchMediaService';
 @Component({
   selector: 'schelude-fec',
@@ -26,11 +26,11 @@ export class ScheludeFecComponent{
             this.mobile = window.innerWidth < 700 ? true  : false;            
         });
     };
-    this.http.get('.app/mocks/getCuotas.json')
+    this.http.get('./app/mocks/getCuotas.json')
         .map(response => response.json().cronograma)
         .subscribe(res => this.cronograma  = res);
 
-         this.http.get('.app/mocks/getCuotas.json')
+         this.http.get('./app/mocks/getCuotas.json')
         .map(response => response.json().titles)
         .subscribe(res => this.titles  = res);  
   }

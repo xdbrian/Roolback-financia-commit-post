@@ -26,11 +26,11 @@ export class ScheludeFecComponent{
             this.mobile = window.innerWidth < 700 ? true  : false;            
         });
     };
-    this.http.get('./mocks/getCuotas.json')
+    this.http.get('./../../mocks/getCuotas.json')
         .map(response => response.json().cronograma)
         .subscribe(res => this.cronograma  = res);
 
-         this.http.get('./mocks/getCuotas.json')
+         this.http.get('./../../mocks/getCuotas.json')
         .map(response => response.json().titles)
         .subscribe(res => this.titles  = res);  
   }
