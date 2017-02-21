@@ -6,39 +6,39 @@ import {MdDialog, MdDialogRef, MdSnackBar} from '@angular/material';
   templateUrl: './outlay.html',
 })
 export class OutlayComponent {
- taza :number =50;
+ // taza :number =50;
 
-  title :String= "Auto Desembolso";
+ //  title :String= "Auto Desembolso";
 
-  foods: any[] = [
-    {name: 'Pizza', rating: 'Excellent'},
-    {name: 'Burritos', rating: 'Great'},
-    {name: 'French fries', rating: 'Pretty good'},
-  ];
+ //  // foods: any[] = [
+ //  //   {name: 'Pizza', rating: 'Excellent'},
+ //  //   {name: 'Burritos', rating: 'Great'},
+ //  //   {name: 'French fries', rating: 'Pretty good'},
+ //  // ];
 
-  progress: number = 0;
+ //  progress: number = 0;
 
-  spaceScreens: Array<any>;
-  isDarkTheme: boolean = false;
-  lastDialogResult: string;
+ //  spaceScreens: Array<any>;
+ //  isDarkTheme: boolean = false;
+ //  lastDialogResult: string;
 
-  constructor(private http:Http,private _dialog: MdDialog, private _snackbar: MdSnackBar) {
-       setInterval(() => {
-      this.progress = (this.progress + Math.floor(Math.random() * 4) + 1) % 100;
-    }, 200);
-  }
+ //  constructor(private http:Http,private _dialog: MdDialog, private _snackbar: MdSnackBar) {
+ //       setInterval(() => {
+ //      this.progress = (this.progress + Math.floor(Math.random() * 4) + 1) % 100;
+ //    }, 200);
+ //  }
 
-     openDialog() {
-    let dialogRef = this._dialog.open(DialogContent);
+ //     openDialog() {
+ //    let dialogRef = this._dialog.open(DialogContent);
 
-    dialogRef.afterClosed().subscribe(result => {
-      this.lastDialogResult = result;
-    })
-  }
+ //    dialogRef.afterClosed().subscribe(result => {
+ //      this.lastDialogResult = result;
+ //    })
+ //  }
 
-  showSnackbar() {
-    this._snackbar.open('YUM SNACKS', 'CHEW');
-  }
+ //  showSnackbar() {
+ //    this._snackbar.open('YUM SNACKS', 'CHEW');
+ //  }
 }
 
 

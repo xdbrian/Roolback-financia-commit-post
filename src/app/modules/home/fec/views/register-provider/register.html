@@ -1,32 +1,34 @@
-<div class="container">
+<div id="register-table">
+    <div class="container">
 
-    <div class="row">
+        <div class="row">
 
-        <div class="col-md-12 col-sm-12 col-xs-12">
-        
-        <div class="col-md-10 col-sm-10 col-xs-10">            
-                <label class="col-md-3 col-sm-3 col-xs-2 ">Tipo de moneda</label>
-                <label *ngIf = "!checked" class="col-md-2 col-sm-2 col-xs-2">Soles</label>
-                <label *ngIf = "checked" class="col-md-2 col-sm-2 col-xs-2"></label>
-                <div  class="col-md-2 col-sm-2 col-xs-2"><md-slide-toggle  [(ngModel)]="checked"></md-slide-toggle></div>
-                <label *ngIf = "checked" class="col-md-1 col-sm-2 col-xs-2">Dólares</label>
-                <label *ngIf = "!checked" class="col-md-1 col-sm-2 col-xs-2"></label>            
-        </div> 
-
-        <div class="col-md-2 col-sm-2 col-xs-2">   
-            <!--<md-checkbox  [(ngModel)]="checked">Checked</md-checkbox>             -->
-                <md-icon>home</md-icon>
-        </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
             
-    </div>
-        <div class="col-md-1 col-sm-2 col-xs-12">
-            <button md-raised-button (click)="openDialog()">+</button>
+            <div class="col-md-10 col-sm-10 col-xs-10">            
+                    <label class="col-md-3 col-sm-3 col-xs-2 ">Tipo de moneda</label>
+                    <label *ngIf = "!checked" class="col-md-2 col-sm-2 col-xs-2">Soles</label>
+                    <label *ngIf = "checked" class="col-md-2 col-sm-2 col-xs-2"></label>
+                    <div  class="col-md-2 col-sm-2 col-xs-2"><md-slide-toggle  [(ngModel)]="checked"></md-slide-toggle></div>
+                    <label *ngIf = "checked" class="col-md-1 col-sm-2 col-xs-2">Dólares</label>
+                    <label *ngIf = "!checked" class="col-md-1 col-sm-2 col-xs-2"></label>            
+            </div> 
+
+            <div class="col-md-2 col-sm-2 col-xs-2">   
+                <!--<md-checkbox  [(ngModel)]="checked">Checked</md-checkbox>             -->
+                    <md-icon>home</md-icon>
+            </div>
+                
         </div>
-        <md-input-container class="col-md-4 col-sm-4 col-xs-12">
-        <input mdInput  [(ngModel)] = "test" >
-        </md-input-container>
+            <div class="col-md-1 col-sm-2 col-xs-12">
+                <button md-raised-button (click)="openDialog()">+</button>
+            </div>
+            <md-input-container class="col-md-4 col-sm-4 col-xs-12">
+            <input mdInput  [(ngModel)] = "test" >
+            </md-input-container>
 
+        </div>
+
+     <simple-table [colums]="providerss" [titles]="titles"></simple-table>
     </div>
-
- <simple-table [colums]="providerss" [titles]="titles"></simple-table>
 </div>
