@@ -3,7 +3,7 @@ import { RouterModule, Routes }  from '@angular/router';
 import { HomeComponent } from './modules/home/home.component';
 import { OutlayComponent } from './modules/outlay/outlay.component';
 const appRoutes: Routes = [
- { path: 'test', component: OutlayComponent },
+ { path: 'registrar-operacion', component: OutlayComponent },
 ];
 
 @NgModule({

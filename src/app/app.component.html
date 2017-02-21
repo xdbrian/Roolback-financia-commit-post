@@ -1,20 +1,11 @@
-<div>  
-    <div id="mySidenav" class="sidenav">
-  <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
-    <a routerLink="/home">Home</a>
-    <a routerLink="/test">test</a>
-
-  </div>
-
-  <div class="right-panel">
-      <md-toolbar >
-        <button md-icon-button>
-          <i class="material-icons md-48">keyboard_backspace</i>
-        </button> 
-        {{subtitle}}
-      </md-toolbar>
-
-      <router-outlet></router-outlet>
-  </div>
-
+<div id="main-view" class="sidenav">
+<div>
+  <img src="../app/core/img/logo_bcp.png" alt="" class="img-responsive">
 </div>
+    <a routerLink="/home">Home</a>
+    <a routerLink="/registrar-operacion">Operaciones</a>
+    <a routerLink="/home">Consultar</a>
+    <a routerLink="/registrar-operacion">Confirmar</a>
+</div>
+<router-outlet></router-outlet>
+
