@@ -12,11 +12,11 @@ export class RegisterComponent implements OnInit{
   checked = true;
 
   ngOnInit(){
-    this.http.get('./mocks/getProviderss.json')
+    this.http.get('./app/mocks/getProviderss.json')
         .map(response => response.json().providerss)
         .subscribe(res => this.providerss  = res);
 
-       this.http.get('./mocks/getProviderss.json')
+       this.http.get('./app/mocks/getProviderss.json')
         .map(response => response.json().titles)
         .subscribe(res => this.titles  = res);     
   }
