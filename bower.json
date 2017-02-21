@@ -1,0 +1,29 @@
+{
+  "name": "T-financio",
+  "description": "Te financio en menos clicks",
+  "version": "0.0.1",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^3.3.0",
+    "jquery-3.1.1.min": "https://code.jquery.com/jquery-3.1.1.min.js",
+    "log4javascript": "^1.4.9",
+    "oclazyload": "1.0.9",
+    "ui-router": "^0.3.0",
+    "angular-busy": "~4.1.3",
+    "angular": "angular2#~1.4.8",
+    "angular-translate": "~2.7.2",   
+    "fontawesome": "~4.7.0"
+  },
+  "ignore": [
+    "CHANGELOG.md",
+    "components",
+    "node_modules",
+    "test",
+    "package.json",
+    "Gruntfile.js",
+    ".bowerrc",
+    ".gitignore",
+    ".travis.yml"
+  ]
+}

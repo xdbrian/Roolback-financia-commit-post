@@ -44,7 +44,7 @@ api/**/*.js
 #
 #node_modules
 #jspm_packages
-#bower_components
+
 #
 ##tests
 #!**/*.e2e.js
