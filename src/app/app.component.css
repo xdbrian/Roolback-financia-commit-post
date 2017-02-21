@@ -4,6 +4,11 @@
     padding-top: 0;
     width: 150px;
 }
+#main-view img{
+    height: auto;
+    width: 110px;
+    margin: 19px;
+}
 .right-panel{
     margin-left: 150px;
     

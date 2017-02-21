@@ -4,11 +4,15 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 import { RouterModule }   from '@angular/router';
-
 import { AppRoutingModule } from './app.routing';
 import { AppComponent } from './app.component';
 import { HomeModule } from './modules/home/home.module';
 import { OutlayComponent } from './modules/register-operation/register-operation.component';
+import { ConsultyComponent } from './modules/consulty/consulty.component';
+import { ConfirmComponent } from './modules/confirm/confirm.component';
+// import { HeaderStatusComponent } from './components/header-status/header-status.component';
+
+
 
 //Components
 
@@ -26,7 +30,9 @@ import { FecModule } from './modules/home/fec/fec.module';
   ],
   declarations: [
     AppComponent,
-    OutlayComponent
+    ConsultyComponent,
+    ConfirmComponent,
+    OutlayComponent,
     //DialogContent
   ],
   //entryComponents: [DialogContent],

@@ -4,6 +4,7 @@ import {MdDialog, MdDialogRef, MdSnackBar} from '@angular/material';
 
 @Component({
   templateUrl: './register-operation.html',
+  styleUrls: ['./register-operation.css']
 })
 export class OutlayComponent {
  // taza :number =50;
