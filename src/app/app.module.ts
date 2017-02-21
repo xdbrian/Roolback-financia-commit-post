@@ -8,7 +8,7 @@ import { RouterModule }   from '@angular/router';
 import { AppRoutingModule } from './app.routing';
 import { AppComponent } from './app.component';
 import { HomeModule } from './modules/home/home.module';
-import { OutlayComponent } from './modules/outlay/outlay.component';
+import { OutlayComponent } from './modules/register-operation/register-operation.component';
 
 //Components
 
