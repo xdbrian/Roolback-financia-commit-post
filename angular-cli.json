@@ -22,9 +22,9 @@
       ],
       "scripts": [],
       "environments": {
-        "source": "environments/environment.ts",
-        "dev": "environments/environment.ts",
-        "prod": "environments/environment.prod.ts"
+        "source": "app/core/environments/environment.ts",
+        "dev": "app/core/environments/environment.ts",
+        "prod": "app/core/environments/environment.prod.ts"
       }
     }
   ],
