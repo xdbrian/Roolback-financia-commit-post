@@ -3,7 +3,7 @@ import { Http } from '@angular/http';
 import {MdDialog, MdDialogRef, MdSnackBar} from '@angular/material';
 
 @Component({
-  templateUrl: './outlay.html',
+  templateUrl: './register-operation.html',
 })
 export class OutlayComponent {
  // taza :number =50;
@@ -42,18 +42,18 @@ export class OutlayComponent {
 }
 
 
-@Component({
-  template: `
-    <p>This is a dialog</p>
-    <p>
-      <label>
-        This label
-        <input #dialogInput>
-      </label>
-    </p>
-    <p> <button md-button (click)="dialogRef.close(dialogInput.value)">CLOSE</button> </p>
-  `,
-})
-export class DialogContent {
-  constructor(@Optional() public dialogRef: MdDialogRef<DialogContent>) { }
-}
+// @Component({
+//   template: `
+//     <p>This is a dialog</p>
+//     <p>
+//       <label>
+//         This label
+//         <input #dialogInput>
+//       </label>
+//     </p>
+//     <p> <button md-button (click)="dialogRef.close(dialogInput.value)">CLOSE</button> </p>
+//   `,
+// })
+// export class DialogContent {
+//   constructor(@Optional() public dialogRef: MdDialogRef<DialogContent>) { }
+// }
