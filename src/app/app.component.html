@@ -1,21 +1,20 @@
 <div>  
-  <div id="mySidenav" class="sidenav">
- <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
-  <a routerLink="/home">Home</a>
-  <a routerLink="/test">test</a>
+    <div id="mySidenav" class="sidenav">
+  <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+    <a routerLink="/home">Home</a>
+    <a routerLink="/test">test</a>
 
+  </div>
 
-</div>
+  <div class="right-panel">
+      <md-toolbar >
+        <button md-icon-button>
+          <i class="material-icons md-48">keyboard_backspace</i>
+        </button> 
+        {{subtitle}}
+      </md-toolbar>
 
-<div class="right-panel">
-          <md-toolbar >
-<!--
-    <button md-icon-button>
-      <i class="material-icons md-48">keyboard_backspace</i>
-    </button>  
-    -->
-{{subtitle}}
-</md-toolbar>
-          <router-outlet></router-outlet>
-</div>
+      <router-outlet></router-outlet>
+  </div>
+
 </div>
