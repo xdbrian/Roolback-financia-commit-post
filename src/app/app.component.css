@@ -1,4 +1,23 @@
 /* menu */
+.header-body{
+    margin-left: 150px;
+    height: 80px;
+
+}
+.mat-toolbar .mat-toolbar-row {
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+    height: 100px;
+}
+.title-header{
+    width: 110%;
+    -webkit-box-shadow: inset -7px -10px 0px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: inset -7px -10px 0px -8px rgba(0,0,0,0.75);
+box-shadow: inset -7px -9px 0px -8px rgb(233, 221, 221);
+ margin-left: -15px;
+}
+
 #main-view{
     position: fixed;
     padding-top: 0;
@@ -81,10 +100,10 @@
 .active{
     background-color: #f57d31;
     width: 5px;
-    height: 25px;
+    height: 42px;
     right: 0px;
     position: absolute;
-    margin-top: -24px;
+    margin-top: -34px;
 }
 
 .img-responsive{
