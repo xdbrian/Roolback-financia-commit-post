@@ -1,8 +1,16 @@
 /* menu */
 .header-body{
     margin-left: 150px;
-    height: 80px;
-
+    height: auto;
+}
+#main-header button{
+    margin: 12px;
+}
+#title{
+    margin: 18px;
+}
+#notifications{
+    margin: 18px;
 }
 .mat-toolbar .mat-toolbar-row {
     flex-direction: row;
