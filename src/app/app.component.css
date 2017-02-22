@@ -81,10 +81,10 @@
 .active{
     background-color: #f57d31;
     width: 5px;
-    height: 25px;
+    height: 42px;
     right: 0px;
     position: absolute;
-    margin-top: -24px;
+    margin-top: -34px;
 }
 
 .img-responsive{
