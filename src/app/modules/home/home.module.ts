@@ -13,6 +13,7 @@ import { FecModule } from './fec/fec.module';
 import { RegisterComponent }    from './fec/views/register-provider/register.component';
 import { ScheludeFecComponent } from './fec/views/schelude-fec/schelude.fec.component';
 import { SimpleTable } from '../../components/simple-table/simpleTable.component';
+import { StepProgress } from '../../components/step-progress/step-progress.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -27,7 +28,8 @@ import { SimpleTable } from '../../components/simple-table/simpleTable.component
     FecComponent,
     RegisterComponent,
     ScheludeFecComponent,
-    SimpleTable
+    SimpleTable,
+    StepProgress
 
   ],
   bootstrap: [ HomeComponent,FecComponent ]
