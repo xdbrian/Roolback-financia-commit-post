@@ -10,7 +10,8 @@ import { HomeModule } from './modules/home/home.module';
 import { OutlayComponent } from './modules/register-operation/register-operation.component';
 import { ConsultyComponent } from './modules/consulty/consulty.component';
 import { ConfirmComponent } from './modules/confirm/confirm.component';
-// import { HeaderStatusComponent } from './components/header-status/header-status.component';
+
+ import { HeaderStatusComponent } from './components/header-status/header.status.component';
 
 
 
@@ -33,6 +34,7 @@ import { FecModule } from './modules/home/fec/fec.module';
     ConsultyComponent,
     ConfirmComponent,
     OutlayComponent,
+    HeaderStatusComponent
     //DialogContent
   ],
   //entryComponents: [DialogContent],

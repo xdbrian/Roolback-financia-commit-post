@@ -1,6 +1,5 @@
 import { Component} from '@angular/core';
 import {Http} from '@angular/http';
-import { Constant } from '../../core/constant-app'
 @Component({
   selector: 'header-status',
   templateUrl: './header.status.html',
@@ -11,5 +10,5 @@ export class HeaderStatusComponent {
     title : "FEC - Registro de operaciones"
   }
 
-  cons :Constant;
+
 }
