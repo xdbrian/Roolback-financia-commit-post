@@ -82,11 +82,13 @@ box-shadow: inset -7px -9px 0px -8px rgb(233, 221, 221);
     padding: 0 !important;
     border-radius: 2px;
     font-family: Roboto,"Helvetica Neue",sans-serif;
+    min-width: 335px;
 }
 
 .card-contenido{
         
     padding-top: 20px;
+        
 }
 
 md-card-content.content-card2.mat-card-content {
