@@ -31,6 +31,7 @@ import { FecModule } from './modules/home/fec/fec.module';
   declarations: [
     AppComponent,
     ConsultyComponent,
+
     ConfirmComponent,
     OutlayComponent,
     //DialogContent
