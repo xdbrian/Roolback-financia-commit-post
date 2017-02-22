@@ -12,6 +12,7 @@
 }
 .md-card-content.content-card.mat-card-content{
     margin-top: 30px;
+        color: black;
 }
 
 body#portada ul.menu li:nth-child(1) a {
@@ -40,8 +41,15 @@ body#contacto ul.menu li:nth-child(4) a {
     margin-top: 8px;
 }
 
+.mat-card-actions, .mat-card-content, .mat-card-subtitle, .mat-card-title {
+    display: block;
+    margin-bottom: 16px;
+    color: #666666;
+}
+
 .all-width{
     width: 100%;
+    color: #333333;
 }
 
 .subtitle{
@@ -61,7 +69,7 @@ body#contacto ul.menu li:nth-child(4) a {
 }
 
 .subtitle3{
-    color: black;
+    color: #333333;
     margin-top: -3px;
     font-size: large;
 }
@@ -73,6 +81,19 @@ box-shadow: inset -7px -9px 0px -8px rgb(233, 221, 221);
     padding-bottom: 13px;
 }
 
+.under-left-line{
+-webkit-box-shadow: inset -8px -8px 0px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: inset -8px -8px 0px -7px rgba(0,0,0,0.75);
+box-shadow: inset -8px -8px 0px -7px rgb(233, 221, 221);
+}
+
+.left-line{
+
+    -webkit-box-shadow: inset -8px -7px 0px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: inset -8px -7px 0px -7px rgba(0,0,0,0.75);
+box-shadow: inset -8px -7px 0px -7px rgb(233, 221, 221);
+}
+
 .mat-card {
     box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
     transition: box-shadow 280ms cubic-bezier(.4,0,.2,1);
@@ -82,15 +103,26 @@ box-shadow: inset -7px -9px 0px -8px rgb(233, 221, 221);
     padding: 0 !important;
     border-radius: 2px;
     font-family: Roboto,"Helvetica Neue",sans-serif;
+    min-width: 335px;
+    color: #a5a5c2;
 }
 
+.line{
+    margin-left: 30px;
+    font-size: 20px;
+    color: #666666;
+    margin-bottom: 5px;
+    margin-top: 15px;
+
+}
 .card-contenido{
         
     padding-top: 20px;
+        
 }
 
 md-card-content.content-card2.mat-card-content {
-    background-color: whitesmoke;
+        color: rgba(130, 114, 114, 0.73);
     padding-top: 15px;
     padding-bottom: 25px;
 }
@@ -101,3 +133,32 @@ md-card-content.content-card2.mat-card-content {
 box-shadow: inset -17px -14px 0px -16px rgb(205, 205, 205);;
 
 }
+
+.content-card2 {
+    background-color: whitesmoke;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    width: 100%;
+    height: 65px;
+    min-width: 336px;
+}
+
+.body-under-products{
+    height: auto;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.item-under-prducts{
+    padding-top: 40px;
+    text-align: center;
+    width: 30%;
+    height: 100px;
+    float: left;
+}
+
+.padding-center{
+    margin-left: 9%;
+    padding-top: 1%;
+}
+

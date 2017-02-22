@@ -1,7 +1,12 @@
 /* menu */
 .header-body{
-    margin-left: 150px;
     height: auto;
+    margin-left: 150px;
+    -webkit-box-shadow: inset -7px -10px 0px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset -7px -10px 0px -8px rgba(0,0,0,0.75);
+    box-shadow: inset -7px -9px 0px -8px rgb(233, 221, 221);
+
+    
 }
 #main-header button{
     margin: 12px;
@@ -20,9 +25,13 @@
 }
 .title-header{
     width: 110%;
-    -webkit-box-shadow: inset -7px -10px 0px -8px rgba(0,0,0,0.75);
--moz-box-shadow: inset -7px -10px 0px -8px rgba(0,0,0,0.75);
-box-shadow: inset -7px -9px 0px -8px rgb(233, 221, 221);
+    border-width: 0px;
+    font-family: 'Arial-BoldMT', 'Arial Bold', 'Arial';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: #666666;
+
  margin-left: -15px;
 }
 
@@ -43,10 +52,11 @@ box-shadow: inset -7px -9px 0px -8px rgb(233, 221, 221);
 }
 
 .icon-card{
-        left: 0px;
+    left: 0px;
     position: absolute;
     margin-top: 6px;
     margin-left: 20px;
+    
 }
 .sidenav {
     height: 100%; /* 100% Full-height */
@@ -94,15 +104,35 @@ box-shadow: inset -7px -9px 0px -8px rgb(233, 221, 221);
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
+
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+
+    .active{
+        background-color: #f57d31;
+        width: 5px;
+        height: 10px;
+        right: 0px;
+        position: absolute;
+        margin-top: -34px;
+    }
 }
 
 @media screen and (max-width: 630px) {
+
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 12px; padding: 8px 8px 8px 15px;}
     .sidenav {width: 100px;}
     .right-panel {margin-left: 100px;}
+
+    .active{
+        background-color: #f57d31;
+        width: 5px;
+        height: 10px;
+        right: 0px;
+        position: absolute;
+        margin-top: -34px;
+    }
 }
 
 .active{
