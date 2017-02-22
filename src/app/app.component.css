@@ -104,15 +104,35 @@
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
+
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+
+    .active{
+        background-color: #f57d31;
+        width: 5px;
+        height: 10px;
+        right: 0px;
+        position: absolute;
+        margin-top: -34px;
+    }
 }
 
 @media screen and (max-width: 630px) {
+
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 12px; padding: 8px 8px 8px 15px;}
     .sidenav {width: 100px;}
     .right-panel {margin-left: 100px;}
+
+    .active{
+        background-color: #f57d31;
+        width: 5px;
+        height: 10px;
+        right: 0px;
+        position: absolute;
+        margin-top: -34px;
+    }
 }
 
 .active{
