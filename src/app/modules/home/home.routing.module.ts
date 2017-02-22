@@ -13,11 +13,11 @@ const homeRoutes: Routes = [
   { path: 'home/registrar',redirectTo: 'fec/registrar',pathMatch: 'full'},
   {
     path: "fec",
-    component : FecComponent,
-    children : [
-      { path: 'registrar',  component:  RegisterComponent},
-        { path: 'cronograma',  component:  ScheludeFecComponent}
-    ]
+    component : RegisterComponent,
+        // children : [
+    //   { path: 'registrar',  component:  RegisterComponent},
+    //     { path: 'cronograma',  component:  ScheludeFecComponent}
+    // ]
     }
   ];
 @NgModule({
