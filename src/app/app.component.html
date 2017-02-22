@@ -8,5 +8,16 @@
     <a routerLink="/confirmar" (click)="changeMenu(4) ">Confirmar<div [ngClass]=" numActive == 4 ? 'active' : ''"></div></a>
 </div>
 
+          <md-toolbar class="header-body">
+    <div class="title-header">
+      <button md-icon-button>
+        <i class="material-icons md-48">keyboard_backspace</i>
+      </button>  
+    
+    {{subtitle}}
+    </div>    
+</md-toolbar>
+
+
 <router-outlet></router-outlet>
 
