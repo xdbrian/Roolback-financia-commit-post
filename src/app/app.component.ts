@@ -9,8 +9,15 @@ export class AppComponent implements OnInit {
 
   subtitle: String = 'Registro de proveedor';
 
+  numActive= 1;
+
   constructor() {}
 
+changeMenu(pos:number){
+  console.log('change '+pos);
+  this.numActive =pos;
+
+}
   ngOnInit() {    
   }
 

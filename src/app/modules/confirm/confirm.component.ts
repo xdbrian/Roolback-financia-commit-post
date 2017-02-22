@@ -3,8 +3,8 @@ import { Http } from '@angular/http';
 import {MdDialog, MdDialogRef, MdSnackBar} from '@angular/material';
 
 @Component({
-  templateUrl: './consulty.html',
+  templateUrl: './confirm.html',
 })
-export class ConsultyComponent {
+export class ConfirmComponent {
 
 }

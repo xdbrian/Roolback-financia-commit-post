@@ -1,4 +1,27 @@
 /* home */
+.icon-card{
+    left: 0px;
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+body#portada ul.menu li:nth-child(1) a {
+  background: red;
+}
+body#portada ul.menu li:nth-child(1) a,
+body#noticias ul.menu li:nth-child(2) a,
+body#productos ul.menu li:nth-child(3) a,
+body#contacto ul.menu li:nth-child(4) a {
+  background: red;
+}
+
+
+.icon-card{
+    left: 0px;
+}
+
+
 #main-home{
 	height: 100%;
     width: 100%;

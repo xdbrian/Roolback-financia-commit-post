@@ -4,12 +4,23 @@
     padding-top: 0;
     width: 150px;
 }
+#main-view img{
+    height: auto;
+    width: 110px;
+    margin: 19px;
+}
 .right-panel{
     margin-left: 150px;
     
     transition: 0.5s;
 }
 
+.icon-card{
+        left: 0px;
+    position: absolute;
+    margin-top: 6px;
+    margin-left: 20px;
+}
 .sidenav {
     height: 100%; /* 100% Full-height */
     width: 150px; /* 0 width - change this with JavaScript */
@@ -65,4 +76,19 @@
     .sidenav a {font-size: 12px; padding: 8px 8px 8px 15px;}
     .sidenav {width: 100px;}
     .right-panel {margin-left: 100px;}
+}
+
+.active{
+    background-color: #f57d31;
+    width: 5px;
+    height: 25px;
+    right: 0px;
+    position: absolute;
+    margin-top: -24px;
+}
+
+.img-responsive{
+    width: 50%;
+    margin-left: 29%;
+    margin-top: 15px;
 }
