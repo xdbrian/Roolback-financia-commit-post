@@ -1,8 +1,10 @@
 /* menu */
 .header-body{
     margin-left: 150px;
-    height: 80px;
-
+    height: 72px;
+    -webkit-box-shadow: inset -7px -10px 0px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: inset -7px -10px 0px -8px rgba(0,0,0,0.75);
+box-shadow: inset -7px -9px 0px -8px rgb(233, 221, 221);
 }
 .mat-toolbar .mat-toolbar-row {
     flex-direction: row;
@@ -12,10 +14,15 @@
 }
 .title-header{
     width: 110%;
-    -webkit-box-shadow: inset -7px -10px 0px -8px rgba(0,0,0,0.75);
--moz-box-shadow: inset -7px -10px 0px -8px rgba(0,0,0,0.75);
-box-shadow: inset -7px -9px 0px -8px rgb(233, 221, 221);
+    border-width: 0px;
+    font-family: 'Arial-BoldMT', 'Arial Bold', 'Arial';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: #666666;
+
  margin-left: -15px;
+     margin-top: 5%;
 }
 
 #main-view{
@@ -35,10 +42,11 @@ box-shadow: inset -7px -9px 0px -8px rgb(233, 221, 221);
 }
 
 .icon-card{
-        left: 0px;
+    left: 0px;
     position: absolute;
     margin-top: 6px;
     margin-left: 20px;
+    
 }
 .sidenav {
     height: 100%; /* 100% Full-height */
