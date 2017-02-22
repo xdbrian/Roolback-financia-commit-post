@@ -1,13 +1,11 @@
-<div id="main-view" class="sidenav">
+<div id="main-view" class="sidenav">  
 <div>
   <img src="../app/core/img/logo_bcp.png" alt="" class="img-responsive">
 </div>
     <a routerLink="/home" (click)="changeMenu(1)">Home <div [ngClass]=" numActive == 1 ? 'active' : ''" ></div></a>
     <a routerLink="/registrar-operacion" (click)="changeMenu(2)">Operaciones <div [ngClass]=" numActive == 2 ? 'active' : ''"></div></a>
-    <a routerLink="/home" (click)="changeMenu(3)">Consultas<div [ngClass]=" numActive == 3 ? 'active' : ''"></div></a>
-    <a routerLink="/registrar-operacion" (click)="changeMenu(4) ">Confirmar<div [ngClass]=" numActive == 4 ? 'active' : ''"></div></a>
-
+    <a routerLink="/consultas" (click)="changeMenu(3)">Consultas<div [ngClass]=" numActive == 3 ? 'active' : ''"></div></a>
+    <a routerLink="/confirmar" (click)="changeMenu(4) ">Confirmar<div [ngClass]=" numActive == 4 ? 'active' : ''"></div></a>
 </div>
-
 <router-outlet></router-outlet>
 
