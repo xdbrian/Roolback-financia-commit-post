@@ -8,18 +8,41 @@
 	    <a routerLink="/confirmar" (click)="changeMenu(4) ">Confirmar<div [ngClass]=" numActive == 4 ? 'active' : ''"></div></a>
 	</div>
 
-		<md-toolbar class="header-body" id="main-header">
+		<div class="header-body" id="main-header">
 		    <div class="title-header col-md-12">
-		      <button md-icon-button class="col-xs-1 col-md-2">
-		        <i class="material-icons md-48">keyboard_backspace</i>
-		      </button>    
-		      <div class="col-xs-4 col-md-4" id="title">
-		  	  {{subtitle}}      	
-		      </div>  
-				<div class="col-xs-2 col-md-2" id="notifications">
-				<img src="../app/core/img/notifications.svg" alt="">
-				</div> 
-		    </div>   
+					<div class="col-md-6">
+						<button md-icon-button class="icon-header-left">
+							<i class="material-icons md-48">keyboard_backspace</i>
+						</button>    
+						<div id="title">
+						{{subtitle}}      	
+						</div> 
+					</div>
 
-		</md-toolbar>
+				<div class="col-md-3 col-md-offset-2 panel-header-left">
+						<div style="width: 100%">
+						<div class="left-line absolute2">
+							<i class="material-icons">account_circle</i>
+						</div> 
+
+						<div class="absolute3" md-icon-button [md-menu-trigger-for]="menu">
+								 
+									<div class="absolute4"><h4 > Everis Perú </h4></div>
+								
+								<div class="absolute5 material-icons">
+										keyboard_arrow_down
+								</div>								
+						</div>
+						</div>
+
+
+		  </div>   
+						<md-menu #menu="mdMenu" class="dropDownMenu-perfil">
+								<button md-menu-item> Refresh </button>
+								<button md-menu-item> Settings </button>
+								<button md-menu-item> Help </button>
+								<button md-menu-item disabled> Sign Out </button>
+						</md-menu>
+					</div>
+		</div>
 		<router-outlet></router-outlet>
