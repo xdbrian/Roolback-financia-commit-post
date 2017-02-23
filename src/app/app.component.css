@@ -5,8 +5,6 @@
     -webkit-box-shadow: inset -7px -10px 0px -8px rgba(0,0,0,0.75);
     -moz-box-shadow: inset -7px -10px 0px -8px rgba(0,0,0,0.75);
     box-shadow: inset -7px -9px 0px -8px rgb(233, 221, 221);
-
-    
 }
 #main-header button{
     margin: 12px;
@@ -103,7 +101,7 @@
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
+/*@media screen and (max-height: 450px) {
 
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
@@ -116,8 +114,8 @@
         position: absolute;
         margin-top: -34px;
     }
-}
-
+}*/
+/*
 @media screen and (max-width: 630px) {
 
     .sidenav {padding-top: 15px;}
@@ -134,7 +132,7 @@
         margin-top: -34px;
     }
 }
-
+*/
 .active{
     background-color: #f57d31;
     width: 5px;

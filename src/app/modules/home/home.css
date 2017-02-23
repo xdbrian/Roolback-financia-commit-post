@@ -49,9 +49,13 @@ body#contacto ul.menu li:nth-child(4) a {
 
 .all-width{
     width: 100%;
-    color: #333333;
+    color: #333333;  
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
-
+.all-width:hover{
+   background-color: gray;
+}
 .subtitle{
     margin-top: -5px;
    
