@@ -14,7 +14,9 @@ import { RegisterComponent }    from './fec/views/register-provider/register.com
 import { ScheludeFecComponent } from './fec/views/schelude-fec/schelude.fec.component';
 import { SimpleTable } from '../../components/simple-table/simpleTable.component';
 import { StepProgress } from '../../components/step-progress/step-progress.component';
+import { HeaderStatusComponent } from '../../components/header-status/header-status.component';
 @NgModule({
+
   imports: [
     CommonModule,
     FormsModule,
@@ -29,7 +31,8 @@ import { StepProgress } from '../../components/step-progress/step-progress.compo
     RegisterComponent,
     ScheludeFecComponent,
     SimpleTable,
-    StepProgress
+    StepProgress,
+    HeaderStatusComponent,
 
   ],
   bootstrap: [ HomeComponent,FecComponent ]
