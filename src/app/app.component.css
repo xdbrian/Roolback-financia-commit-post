@@ -218,3 +218,8 @@ div#notifications {
 .icon-header-left{
     float: left;
 }
+
+.container-iconleft-titleHeader{
+
+        min-width: 330px;
+}

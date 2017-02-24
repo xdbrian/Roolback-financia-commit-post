@@ -18,6 +18,7 @@ import { ConfirmComponent } from './modules/confirm/confirm.component';
 //Components
 
 //Modules
+
 import { FecModule } from './modules/home/fec/fec.module';
 
 @NgModule({
@@ -39,6 +40,7 @@ import { FecModule } from './modules/home/fec/fec.module';
     // FecComponent,
     //DialogContent
   ],
+ 
   //entryComponents: [DialogContent],
   bootstrap: [ AppComponent ]
 })

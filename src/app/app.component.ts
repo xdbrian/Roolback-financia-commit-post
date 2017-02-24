@@ -1,24 +1,42 @@
 import { Component, OnInit } from '@angular/core';
 
+//import { ConstantsService } from './core/services/constants.service';
+import { Constant } from './core/services/hero';
+import { _serviceConstant } from './core/services/constant.services';
+
 @Component({
+  
   selector: 'app ',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  providers: [_serviceConstant]
 })
 export class AppComponent implements OnInit {
-
-  subtitle: String = 'Registro de proveedor';
+  constante: Constant = new Constant();
+  subtitle: String = 'Home';
 
   numActive= 1;
 
-  constructor() {}
+  OptionsMenu :Menu[] = [
+    { value : "home", pos : 1, link : "home"}
+  ];
 
-changeMenu(pos:number){
-  console.log('change '+pos);
-  this.numActive =pos;
+  constructor(private heroService: _serviceConstant) {
+   }
 
-}
-  ngOnInit() {    
+  changeMenu(pos:number){
+    this.numActive =pos;
   }
 
+  ngOnInit(): void {
+    this.constante = this.heroService.getHeroes();
+  }
+  
+}
+
+export class Menu{
+
+  value :String;
+  pos:number;
+  link:String;
 }

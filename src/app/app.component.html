@@ -1,4 +1,4 @@
-	<div id="main-view" class="sidenav">  
+<div id="main-view" class="sidenav">  
 		<div>
 		  <img src="../app/core/img/logo_bcp.png" alt="" class="img-responsive">
 		</div>
@@ -6,20 +6,22 @@
 	    <a routerLink="/registrar-operacion" (click)="changeMenu(2)">Operaciones <div [ngClass]=" numActive == 2 ? 'active' : ''"></div></a>
 	    <a routerLink="/consultas" (click)="changeMenu(3)">Consultas<div [ngClass]=" numActive == 3 ? 'active' : ''"></div></a>
 	    <a routerLink="/confirmar" (click)="changeMenu(4) ">Confirmar<div [ngClass]=" numActive == 4 ? 'active' : ''"></div></a>
+
 	</div>
 
-		<div class="header-body" id="main-header">
-		    <div class="title-header col-md-12">
-					<div class="col-md-6">
+		<div class="header-body" id="main-header">			
+		    <div class="title-header col-md-12 col-xs-12">
+					<div class="col-md-6 col-xs-4 container-iconleft-titleHeader">
 						<button md-icon-button class="icon-header-left">
 							<i class="material-icons md-48">keyboard_backspace</i>
 						</button>    
+					
 						<div id="title">
-						{{subtitle}}      	
+						{{constante.title}}     						 	
 						</div> 
 					</div>
 
-				<div class="col-md-3 col-md-offset-2 panel-header-left">
+				<div class="col-md-3 col-md-offset-2 col-xs-3 panel-header-left">
 						<div style="width: 100%">
 						<div class="left-line absolute2">
 							<i class="material-icons">account_circle</i>
@@ -34,8 +36,6 @@
 								</div>								
 						</div>
 						</div>
-
-
 		  </div>   
 						<md-menu #menu="mdMenu" class="dropDownMenu-perfil">
 								<button md-menu-item> Refresh </button>
@@ -43,6 +43,7 @@
 								<button md-menu-item> Help </button>
 								<button md-menu-item disabled> Sign Out </button>
 						</md-menu>
-					</div>
 		</div>
-		<router-outlet></router-outlet>
+		</div>
+
+<router-outlet></router-outlet>
