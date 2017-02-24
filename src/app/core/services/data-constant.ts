@@ -1,4 +1,4 @@
-import { Constant } from './hero';
+import { Constant } from './Constant';
 
 export var CONSTANT: Constant = {
   id: 11,

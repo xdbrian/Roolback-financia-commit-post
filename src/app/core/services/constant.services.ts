@@ -1,4 +1,4 @@
-import { Constant } from './hero';
+import { Constant } from './Constant';
 import { CONSTANT } from './data-constant';
 import { Injectable } from '@angular/core';
 

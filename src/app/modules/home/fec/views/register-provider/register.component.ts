@@ -4,7 +4,7 @@ import {MdDialog, MdDialogConfig,MdDialogRef, MdSnackBar} from '@angular/materia
 import { Colum } from '../../services/fec.service';
 
 import { _serviceConstant } from '../../../../../core/services/constant.services';
-import { Constant } from '../../../../../core/services/hero';
+import { Constant } from '../../../../../core/services/Constant';
 @Component({
   selector: 'register-provider',
   templateUrl: './register.html',
