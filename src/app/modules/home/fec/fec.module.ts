@@ -6,8 +6,9 @@ import { MaterialModule } from '@angular/material';
 import { MdInputModule } from '@angular/material/';
 import { RegisterComponent,DialogContent } from './views/register-provider/register.component';
 import { FecComponent } from './fec.component';
-import { SimpleTable } from '../../../components/simple-table/simpleTable.component';
-import { StepProgress } from '../../../components/step-progress/step-progress.component';
+import { SimpleTable } from '../../components/simple-table/simpleTable.component';
+import { StepProgress } from '../../components/step-progress/step-progress.component';
+import { HeaderStatusComponent } from '../../components/header-status/header-status.component';
 import { ScheludeFecComponent} from './views/schelude-fec/schelude.fec.component';
 
 //import { FecRoutingModule } from './fec.routing';
@@ -24,6 +25,7 @@ import { ScheludeFecComponent} from './views/schelude-fec/schelude.fec.component
     FecComponent,
     SimpleTable,
     StepProgress,
+    HeaderStatusComponent,
     ScheludeFecComponent
   ],
   entryComponents: [DialogContent],

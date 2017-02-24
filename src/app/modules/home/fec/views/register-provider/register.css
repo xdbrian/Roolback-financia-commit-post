@@ -4,3 +4,8 @@
     width: 100%;
     margin-left: 150px;
 }
+#input-info{
+	border-bottom: 1px solid #818181;
+	margin-bottom: 30px;
+	margin-top: 50px;
+}

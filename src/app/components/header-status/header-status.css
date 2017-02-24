@@ -1,0 +1,40 @@
+/* line status */
+
+#line-status{
+	 margin-top: 100px;
+	 border: 1px solid #818181;
+}
+#line-status h1{
+	font-size: 16px;
+	text-align: center;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding-top: 13px;
+}
+#line-status h5{
+	text-align: center;
+    margin-top: 0;
+}
+#local h1{
+	float: left;
+	font-size: 1.7em;
+	margin: 23px 0;
+}
+.center-div{
+	padding: 20px 0;
+}
+#local{
+	display: inline-flex;
+	padding: 9px;
+}
+#local img{
+	 padding-left: 8px;
+	 padding-top: 12px;
+}
+#block-info{
+	height: 100%;
+	border-right: 1px solid #818181;
+}
+#mount{
+	 border-left: 1px solid #818181;
+}
