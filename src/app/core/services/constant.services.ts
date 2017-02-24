@@ -1,11 +1,11 @@
-import { Constant } from './Constant';
-import { CONSTANT } from './data-constant';
+import { Constant } from '../constant/constant';
 import { Injectable } from '@angular/core';
 
 @Injectable()
 export class _serviceConstant {
-  getHeroes(): Constant {
-    return CONSTANT;
+
+  getConstant() {
+    return Constant;
   }
 
 }

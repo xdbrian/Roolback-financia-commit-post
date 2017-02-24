@@ -4,7 +4,7 @@ import {MdDialog, MdDialogConfig,MdDialogRef, MdSnackBar} from '@angular/materia
 import { Colum } from '../../services/fec.service';
 
 import { _serviceConstant } from '../../../../../core/services/constant.services';
-import { Constant } from '../../../../../core/services/Constant';
+import { Constant } from '../../../../../core/constant/constant';
 @Component({
   selector: 'register-provider',
   templateUrl: './register.html',
@@ -12,7 +12,7 @@ import { Constant } from '../../../../../core/services/Constant';
   providers: [_serviceConstant]
 })
 export class RegisterComponent implements OnInit{ 
- constante: Constant;
+ constante;
   checked = true;
   subtitle: String = '';
 
@@ -25,7 +25,7 @@ export class RegisterComponent implements OnInit{
         .map(response => response.json().titles)
         .subscribe(res => this.titles  = res);  
 
-         this.constante = this.heroService.getHeroes();   
+         this.constante = this.heroService.getConstant();   
 
          this.constante.title='FEC - Registro de operaciones';
          
