@@ -204,10 +204,9 @@ div#notifications {
     margin-top: 9px;
 }
 
-.mat-menu-panel.dropDownMenu-perfil.mat-menu-after.mat-menu-below{
-    margin-top: 40px;
-    margin-left: px;
+.mat-menu-content {
     width: 200px;
+    background-color: black;
 }
 
 .panel-header-left{

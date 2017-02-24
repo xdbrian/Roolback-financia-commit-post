@@ -35,12 +35,7 @@ export class RegisterComponent implements OnInit{
   titles : Colum[];
   providerss  : Colum[];
   test :String = "asdasdas " ;
-  constructor(private http:Http,private _dialog: MdDialog, private _snackbar: MdSnackBar,private heroService: _serviceConstant) {
-
-        console.log('into registrar componenete');
-  
-        
-    }
+  constructor(private http:Http,private _dialog: MdDialog, private _snackbar: MdSnackBar,private heroService: _serviceConstant) {}
 
   openDialog() {
        

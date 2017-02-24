@@ -14,10 +14,7 @@ export class HomeComponent implements OnInit{
 
   constante: Constant = new Constant();
   
-
-  constructor(private heroService: _serviceConstant) {
-    console.log('into home constructor');
-  }
+  constructor(private heroService: _serviceConstant) {}
 
   ngOnInit(): void {
          console.log('into init');
