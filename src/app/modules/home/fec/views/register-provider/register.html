@@ -1,22 +1,22 @@
-<div id="register-table">
-
 <step-progress></step-progress>
+<header-status></header-status>
+<div id="register-table">
 
  <!--
    <div class="container">
 
         <div class="row">
 
-            <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="col-md-12 col-sm-12 col-xs-12" id="input-info">
             
-            <div class="col-md-10 col-sm-10 col-xs-10">            
-                    <label class="col-md-3 col-sm-3 col-xs-2 ">Tipo de moneda</label>
-                    <label *ngIf = "!checked" class="col-md-2 col-sm-2 col-xs-2">Soles</label>
-                    <label *ngIf = "checked" class="col-md-2 col-sm-2 col-xs-2"></label>
-                    <div  class="col-md-2 col-sm-2 col-xs-2"><md-slide-toggle  [(ngModel)]="checked"></md-slide-toggle></div>
-                    <label *ngIf = "checked" class="col-md-1 col-sm-2 col-xs-2">Dólares</label>
-                    <label *ngIf = "!checked" class="col-md-1 col-sm-2 col-xs-2"></label>            
-            </div> 
+                    <div class="col-md-10 col-sm-10 col-xs-10">            
+                            <label class="col-md-2 col-sm-2 col-xs-1 ">Tipo de moneda</label>
+                            <label *ngIf = "!checked" class="col-md-1 col-sm-1 col-xs-1">Soles</label>
+                            <label *ngIf = "checked" class="col-md-1 col-sm-1 col-xs-1"></label>
+                            <div class="col-md-1 col-sm-1 col-xs-1"><md-slide-toggle  [(ngModel)]="checked"></md-slide-toggle></div>
+                            <label *ngIf = "checked" class="col-md-1 col-sm-1 col-xs-1">Dólares</label>
+                            <label *ngIf = "!checked" class="col-md-1 col-sm-1 col-xs-1"></label>            
+                    </div> 
 
             <div class="col-md-2 col-sm-2 col-xs-2">   
 
@@ -34,8 +34,8 @@
         </div>
 
      <simple-table [colums]="providerss" [titles]="titles"></simple-table>
-    </div>
-    <md-card>
+    </div> 
+     <md-card>
   <button md-raised-button routerLink="registrar">Registrar</button>
 <button md-raised-button routerLink="cronograma">Contnuar</button>
 </md-card> -->
