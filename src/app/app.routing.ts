@@ -11,11 +11,6 @@ const appRoutes: Routes = [
  { path: 'registrar-operacion', component: OutlayComponent },
  { path: 'consultas', component: ConsultyComponent },
  { path: 'confirmar', component: ConfirmComponent },
- // { path: "fec",
- //    component : FecComponent,
- //    children : [
- //     { path: 'registrar-operacion',  component:  ScheludeFecComponent}
- //    ]}
 ];
 
 @NgModule({

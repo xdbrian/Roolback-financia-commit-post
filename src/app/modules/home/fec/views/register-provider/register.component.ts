@@ -1,41 +1,35 @@
 import { Component,Injectable,Optional,Input,OnInit } from '@angular/core';
-import { Http } from '@angular/http';
 import {MdDialog, MdDialogConfig,MdDialogRef, MdSnackBar} from '@angular/material';
 import { Colum } from '../../services/fec.service';
 
-import { _serviceConstant } from '../../../../../core/services/constant.services';
+import { serviceConstant } from '../../../../../core/services/constant.services';
 import { Constant } from '../../../../../core/constant/constant';
+
+
 @Component({
   selector: 'register-provider',
   templateUrl: './register.html',
   styleUrls: ['./register.css'],
-  providers: [_serviceConstant]
+  providers: [serviceConstant]
 })
 export class RegisterComponent implements OnInit{ 
- constante;
+  constante;
   checked = true;
-  subtitle: String = '';
+  subtitle: String = ' ';
 
   ngOnInit(){
-    this.http.get('./app/mocks/getProviderss.json')
-        .map(response => response.json().providerss)
-        .subscribe(res => this.providerss  = res);
 
-       this.http.get('./app/mocks/getProviderss.json')
-        .map(response => response.json().titles)
-        .subscribe(res => this.titles  = res);  
-
-         this.constante = this.heroService.getConstant();   
-
-         this.constante.title='FEC - Registro de operaciones';
+         this.constante = this.serviceConstant.getConstant();   
+         this.constante.title='FEC - Registro de operaciones ';
          
-  }
-  title :String= "FEC - Registro de operaciones";
+  } 
+  title :String= "FEC - Registro de operaciones ";
 
   titles : Colum[];
   providerss  : Colum[];
-  test :String = "asdasdas " ;
-  constructor(private http:Http,private _dialog: MdDialog, private _snackbar: MdSnackBar,private heroService: _serviceConstant) {}
+  test :String = "asdasdas";
+
+  constructor(private _dialog: MdDialog, private _snackbar: MdSnackBar,private serviceConstant: serviceConstant) {}
 
   openDialog() {
        

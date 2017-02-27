@@ -5,4 +5,5 @@ export class Colum{
         capital :number ;
         cuota :number ;
         fechaVencimiento : String;
+
 }

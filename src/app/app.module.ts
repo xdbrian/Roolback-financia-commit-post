@@ -44,5 +44,4 @@ import { FecModule } from './modules/home/fec/fec.module';
   //entryComponents: [DialogContent],
   bootstrap: [ AppComponent ]
 })
-export class AppModule {
-}
+export class AppModule {}
