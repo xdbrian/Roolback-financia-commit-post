@@ -23,17 +23,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.constante = this.serviceConstant.getConstant();
-
-            let data = {
-          "request": {
-          "codProduct": "1"
-          }
-        }
-
-        //this.serviceConstant.getPosts('fe/linevaluation/getlinevaluation',data);
   }
-  
-
 
 }
 
