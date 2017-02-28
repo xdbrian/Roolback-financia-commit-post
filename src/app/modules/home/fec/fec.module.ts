@@ -12,14 +12,10 @@ import { StepProgress } from '../../components/step-progress/step-progress.compo
 import { HeaderStatusComponent } from '../../components/header-status/header-status.component';
 
 import { ScheludeFecComponent} from './views/schelude-fec/schelude.fec.component';
-// Importamos el módulo http del paquete http de Angular
-import { HttpModule, JsonpModule } from '@angular/http';
-
 
 //import { FecRoutingModule } from './fec.routing';
 @NgModule({
   imports: [
-    HttpModule,
     CommonModule,
     FormsModule,
     MdInputModule,
@@ -37,8 +33,4 @@ import { HttpModule, JsonpModule } from '@angular/http';
   entryComponents: [DialogContent],
   bootstrap: [ FecComponent ]
 })
-export class FecModule {
-
-
-
-}
+export class FecModule {}

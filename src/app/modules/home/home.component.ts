@@ -2,7 +2,8 @@ import { Component,OnInit } from '@angular/core';
 import { Http } from '@angular/http';
 
 import { Constant } from '../../core/constant/constant';
-import { serviceConstant } from '../../core/services/constant.services';
+import { _serviceConstant } from '../../core/services/constant.services';
+
 
 @Component({
   selector: 'home',
@@ -13,13 +14,12 @@ export class HomeComponent implements OnInit{
 
   constante;
   
-  constructor(private serviceConstant: serviceConstant) {}
+  constructor(private heroService: _serviceConstant) {}
 
   ngOnInit(): void {
-    this.constante = this.serviceConstant.getConstant();
+    this.constante = this.heroService.getConstant();
     this.constante.title = 'Financiamiento electronico';
 
   }
-
 
 }
