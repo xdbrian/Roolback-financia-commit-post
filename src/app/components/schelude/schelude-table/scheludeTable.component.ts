@@ -19,9 +19,9 @@ export class ScheludeTableComponent {
 
   constructor(private http:Http) {
  
-    this.http.get('./mocks/ConsultaCuota.json')
+  /*  this.http.get('./mocks/ConsultaCuota.json')
       .map(response => response.json().cronograma)
-      .subscribe(res => this.cronograma = res);
+      .subscribe(res => this.cronograma = res);*/
    
   }
 
